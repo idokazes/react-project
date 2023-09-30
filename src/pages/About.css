@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+.mydiv {
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  text-align: center;
+  color: azure;
+  background-image: url(https://www.hdnicewallpapers.com/Walls/Big/Love%20Heart/Romantic_Couple_Near_Sea_Beach_Photo.jpg);
+  background-position: center;
+  background-size: cover;
+  text-shadow: 1px 1px 2px black;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bg-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeIn 1.5s ease forwards;
+  margin: 10px 0 10px 0;
+}
+
+.textabout h1 {
+  font-family: "Pacifico", cursive !important;
+  font-size: 60px;
+}
+.textabout h2 {
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.textabout h3 {
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.textabout p {
+  margin-top: 20px;
+  font-size: 20px;
+  padding: 50px;
+}
+
+@media (max-width: 500px) {
+  .textabout h1 {
+    font-size: 40px;
+  }
+  .textabout h2 {
+    font-size: 35px;
+  }
+  .textabout h3 {
+    font-size: 25px;
+  }
+
+  .textabout p {
+    font-size: 16px;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-30px);
+  }
+}

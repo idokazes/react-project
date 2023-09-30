@@ -1,0 +1,86 @@
+.card-info {
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-wrapper {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+  font-weight: 500;
+  opacity: 0;
+  transform: translateY(50px); /* Start slightly below its normal position */
+  animation: fadeIn 1.5s ease forwards;
+  padding: 30px;
+  width: 70%;
+  border-radius: 10px;
+  position: relative;
+}
+
+.content-title {
+  margin: 10px 0 15px 0;
+}
+
+.content-subtitle {
+  margin: 10px 0 15px 0;
+}
+
+.content-description {
+  margin-bottom: 20px;
+}
+
+.content-container {
+  color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+.content-web {
+  text-decoration: none;
+  max-width: 350px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.content-icon {
+  margin-left: 10px;
+}
+
+@media (max-width: 650px) {
+  .content-title {
+    font-size: 20px;
+  }
+
+  .content-subtitle {
+    font-size: 17px;
+
+  }
+
+  .content-description {
+    font-size: 14px;
+
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-30px);
+  }
+}

@@ -1,0 +1,24 @@
+.features-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.dark-icon {
+  cursor: pointer;
+  transition: all 0.8s ease;
+}
+
+.light-icon {
+  cursor: pointer;
+  transition: all 0.8s ease;
+}
+
+.dark-icon:hover, .light-icon:hover {
+    transform: rotate(360deg);
+}
+
+@media (max-width: 450px) {
+  .app-logo {
+    display: none !important;
+  }
+}
